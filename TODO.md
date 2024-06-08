@@ -20,3 +20,5 @@ This file explain the whole process that I follow to create the current app.
 - Add selection
 - Clear selection
 - Displaying images
+
+12. About page
