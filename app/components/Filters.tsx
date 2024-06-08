@@ -18,13 +18,18 @@ const Filters = () => {
             values={[]}
             extraClasses="col-sm-12 col-md-6"
           />
+          <div>
+            <button className="btn btn-primary">Add selection</button>
+          </div>
+
           <Selection
             label="Your selection(s)"
             values={[]}
             multiple={true}
-            extraClasses="col-sm-12 col-md-6"
+            extraClasses="col-sm-12 col-md-6 mt-3"
           />
         </div>
+
         <div className="row">
           <div className="col-sm-12 col-md-12">
             <button className="btn btn-outline-danger me-3">
