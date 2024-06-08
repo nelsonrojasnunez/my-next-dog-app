@@ -7,6 +7,7 @@ This file explain the whole process that I follow to create the current app.
 3. Create navbar component
 4. Create filters component
 5. Create Gallery component
+
 6. Fetch data from Dog Ceo API - Breeds
 7. Populate Breed filter with requested data
 8. Populate Sub Breed filter after Breed filter change
