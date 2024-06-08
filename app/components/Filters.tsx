@@ -1,4 +1,6 @@
-import React from "react";
+"use client";
+
+import Selection from "../components/Selection";
 
 const Filters = () => {
   return (
@@ -7,35 +9,11 @@ const Filters = () => {
         <div className="card-body">
           <div className="row">
             <div className="col-sm-12 col-md-6">
-              <div className="mb-3">
-                <label htmlFor="basic-url" className="form-label">
-                  Breed selector
-                </label>
-                <select
-                  className="form-select"
-                  aria-label="Default select example"
-                >
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
-              </div>
+              <Selection label="Breed selector" values={[]} />
             </div>
             <div className="col-sm-12 col-md-6">
               <div className="mb-3">
-                <label htmlFor="basic-url" className="form-label">
-                  Sub Breed selector
-                </label>
-                <select
-                  className="form-select"
-                  aria-label="Default select example"
-                >
-                  <option selected>Open this select menu</option>
-                  <option value="1">One</option>
-                  <option value="2">Two</option>
-                  <option value="3">Three</option>
-                </select>
+                <Selection label="Sub Breed selector" values={[]} />
               </div>
             </div>
           </div>
@@ -47,14 +25,11 @@ const Filters = () => {
           <div className="row">
             <div className="col-sm-12 col-md-6">
               <div className="mb-3">
-                <label htmlFor="basic-url" className="form-label">
-                  Your selection(s)
-                </label>
-                <select
-                  className="form-select"
-                  aria-label="Default select example"
-                  multiple
-                ></select>
+                <Selection
+                  label="Your selection(s)"
+                  values={[]}
+                  multiple={true}
+                />
               </div>
             </div>
           </div>
