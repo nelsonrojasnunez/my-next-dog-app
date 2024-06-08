@@ -3,15 +3,17 @@ interface Props {
   handleOnChange?: (selection: string) => void;
   multiple?: boolean;
   values: string[];
+  extraClasses?: string;
 }
 const Selection = ({
   label,
   values,
   handleOnChange = () => {},
   multiple = false,
+  extraClasses,
 }: Props) => {
   return (
-    <div className="mb-3">
+    <div className={`mb-3 ${extraClasses}`}>
       <label className="form-label">{label}</label>
       <select
         className="form-select"
