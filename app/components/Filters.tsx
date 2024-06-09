@@ -2,15 +2,18 @@
 
 import Selection from "./Selection";
 import Card from "./Card";
+import useBreeds from "../hooks/useBreeds";
 
 const Filters = () => {
+  const { breedList } = useBreeds();
+
   return (
     <>
       <Card>
         <div className="row">
           <Selection
             label="Breed selector"
-            values={[]}
+            values={Object.keys(breedList)}
             extraClasses="col-sm-12 col-md-6"
           />
           <Selection

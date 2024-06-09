@@ -12,6 +12,10 @@ const Selection = ({
   multiple = false,
   extraClasses,
 }: Props) => {
+  const capitalize = (str: string) => {
+    return str !== "" ? str[0].toUpperCase() + str.slice(1) : "";
+  };
+
   return (
     <div className={`mb-3 ${extraClasses}`}>
       <label className="form-label">{label}</label>
@@ -22,7 +26,7 @@ const Selection = ({
       >
         {values.map((element) => (
           <option key={element} value={element}>
-            {element}
+            {capitalize(element)}
           </option>
         ))}
       </select>
