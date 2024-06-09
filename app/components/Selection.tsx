@@ -24,6 +24,11 @@ const Selection = ({
         multiple={!!multiple}
         onChange={(evt) => handleOnChange(evt.target.value)}
       >
+        {multiple === false && (
+          <option key="" value="">
+            Select
+          </option>
+        )}
         {values.map((element) => (
           <option key={element} value={element}>
             {capitalize(element)}

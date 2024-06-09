@@ -1,14 +1,17 @@
 import React from "react";
 import DogImage from "./DogImage";
 
-const Gallery = () => {
-  const test = [1, 2, 3, 4, 5, 6];
+interface Props {
+  images: string[];
+}
+
+const Gallery = ({ images }: Props) => {
   return (
     <div className="card mt-2 rounded-2">
       <div className="card-body">
-        <div className="row">
-          {test.map((item) => (
-            <DogImage key={item} />
+        <div className="row align-items-start">
+          {images.map((item) => (
+            <DogImage key={item} image={item} />
           ))}
         </div>
       </div>
