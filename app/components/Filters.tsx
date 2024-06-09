@@ -39,6 +39,7 @@ const Filters = ({ handleSetDogsImages }: Props) => {
 
   const handleClearSelection = () => {
     setSelected([]);
+    handleSetDogsImages([]);
   };
 
   const handleRequestDogsGallery = async () => {
