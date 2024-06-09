@@ -20,6 +20,11 @@ const Filters = ({ handleSetDogsImages }: Props) => {
 
   const handleBreedChange = (selectedItem: string) => {
     setCurrBreed(selectedItem);
+    if (selectedItem === "") {
+      setsubBreedList([]);
+      setCurrSubBreed("");
+      return;
+    }
     let subBreedsList = [];
     subBreedsList = Object(breedList)[selectedItem];
     setsubBreedList(subBreedsList);
@@ -87,7 +92,7 @@ const Filters = ({ handleSetDogsImages }: Props) => {
           />
           <div>
             <button
-              className="btn btn-primary"
+              className="btn btn-outline-info"
               onClick={() => handleAddSelection()}
             >
               Add selection
@@ -115,7 +120,7 @@ const Filters = ({ handleSetDogsImages }: Props) => {
               className="btn btn-outline-success"
               onClick={() => handleRequestDogsGallery()}
             >
-              Fetch Images
+              Fetch Random Images
             </button>
           </div>
         </div>

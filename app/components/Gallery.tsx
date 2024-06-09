@@ -11,6 +11,9 @@ const Gallery = ({ images }: Props) => {
     <>
       <div className="card mt-2 rounded-2">
         <div className="card-body">
+          {images.length > 0 && (
+            <h3>Seeing {images.length} lovely dog images</h3>
+          )}
           <div className="row align-items-start">
             {images.length === 0 && (
               <>
