@@ -33,9 +33,12 @@ const Filters = () => {
         <div className="row">
           <div className="col-sm-12 col-md-12">
             <button className="btn btn-outline-danger me-3">
+              Remove Selecteds
+            </button>
+            <button className="btn btn-outline-danger me-3">
               Clear Selection
             </button>
-            <button className="btn btn-outline-primary">Fetch Images</button>
+            <button className="btn btn-outline-success">Fetch Images</button>
           </div>
         </div>
       </Card>
