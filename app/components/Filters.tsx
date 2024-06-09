@@ -41,8 +41,6 @@ const Filters = ({ handleSetDogsImages }: Props) => {
     setSelected([]);
   };
 
-  const handleRemoveCurrent = () => {};
-
   const handleRequestDogsGallery = async () => {
     //const selection = selecteds[0] ?? "";
     setIsLoading(true);
@@ -106,9 +104,6 @@ const Filters = ({ handleSetDogsImages }: Props) => {
 
         <div className="row">
           <div className="col-sm-12 col-md-12">
-            <button className="btn btn-outline-danger me-3">
-              Remove Selecteds
-            </button>
             <button
               className="btn btn-outline-danger me-3"
               onClick={() => handleClearSelection()}
